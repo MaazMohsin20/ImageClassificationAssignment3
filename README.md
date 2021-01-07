@@ -1,6 +1,7 @@
 # Intel-Scene-Classification
-This repository includes various approaches I employed when I took part in the Intel Scene Classification Challenge. 
-I finished in the top 5%. A detailed explanation of these approaches, along with the confusion matrices can be found in [my article here](https://becominghuman.ai/lessons-from-my-first-deep-learning-hackathon-42ced244a38d).
+This repository includes various approaches used by authors who took part in the intel natural scene classification challange 
+A detailed explanation of these approaches, along with the confusion matrices can be found in this article which was used here 
+[article here](https://becominghuman.ai/lessons-from-my-first-deep-learning-hackathon-42ced244a38d).
 
 # Competition details
 
