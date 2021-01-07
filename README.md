@@ -9,10 +9,10 @@ I finished in the top 5%. A detailed explanation of these approaches, along with
 ![Sample image](https://github.com/MaazMohsin20/ImageClassificationAssignment3/blob/main/images/image_2.png)
 
 
-**Note**: I had planned on uploading all the trained models, i.e `.pth` files on Github. However due to size restrictions of the free plan (even after using git lfs) I wasn't able to upload them. The files can be downloaded from my [Kaggle](https://www.kaggle.com/dipam7).
+
 ## Explanation of the various approaches used
 
-### 0. [Basic approach](https://github.com/dipam7/Intel-Scene-Classification/blob/master/basic_approach/nb/intel-scene-classification-basic-approach.ipynb)
+### 0. [Basic approach](https://github.com/MaazMohsin20/ImageClassificationAssignment3/tree/main/basic_approach/nb/intel-scene-classification-basic-approach.ipynb)
 
 In this approach we don't do much. We stick to most of fastai's default data augmentations except switching off one or two which
 don't make sense. We use ResNet34 as our pretrained model, find the learning rate and train for a few epochs. We manage to achieve
@@ -21,7 +21,7 @@ an accuracy of ~93%. In the following approches we try to improve upon this mode
 ![Sample image](https://github.com/MaazMohsin20/ImageClassificationAssignment3/blob/main/images/image_3.png)
 
 
-### 1. [Different architectures](https://github.com/dipam7/Intel-Scene-Classification/blob/master/different_models/nb/intel-scene-classification-using-different-models.ipynb)
+### 1. [Different architectures](https://github.com/MaazMohsin20/ImageClassificationAssignment3/tree/main/different_models/nb/intel-scene-classification-using-different-models.ipynb)
 
 In this approach, we follow the exact same steps that we used in the basic approach except this time, 
 instead of only trying ResNet34, we also try ResNet50 and ResNet101.
@@ -35,7 +35,7 @@ instead of only trying ResNet34, we also try ResNet50 and ResNet101.
 ![Sample image](https://github.com/MaazMohsin20/ImageClassificationAssignment3/blob/main/images/image_5.png)
 
 
-### 2. [Progressive image resizing](https://github.com/dipam7/Intel-Scene-Classification/blob/master/progressive_image_resizing/nb/intel-scene-progressive-image-resizing.ipynb)
+### 2. [Progressive image resizing](https://github.com/MaazMohsin20/ImageClassificationAssignment3/tree/main/progressive_image_resizing/nb/intel-scene-progressive-image-resizing.ipynb)
 
 Experiments have shown that if we train our model with lower resolution images and then use those weights to train our model with higher resolution images, our accuracy improves. 
 And this is what we’ve tried in our second approach.
@@ -45,7 +45,7 @@ Results below:
 ![Sample image](https://github.com/MaazMohsin20/ImageClassificationAssignment3/blob/main/images/image_6.png)
 
 
-### 3. [Removing confusion](https://github.com/dipam7/Intel-Scene-Classification/blob/master/removing_confusion/nb/intel-scene-removing-confusion.ipynb)
+### 3. [Removing confusion](https://github.com/MaazMohsin20/ImageClassificationAssignment3/tree/main/removing_confusion/nb/intel-scene-removing-confusion.ipynb)
 
 Even after using better models and progressive image resizing, the confusion between some of the classes (mountains and glaciers) did not reduce. In this approach, I tried to train the model with the non-confused classes first and then show it all the classes later (i.e first show it only mountains and later show it glaciers as well). Unfortunately, this approach didn't work well.
 Results below:
